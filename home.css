@@ -1,0 +1,118 @@
+.home-container { 
+  padding: 60px;
+  text-align: center;
+}
+
+/* Centering the Title */
+.heading-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;  /* Centers horizontally */
+  align-items: center;  /* Centers vertically */
+  text-align: center;
+  height: 150px; /* Adjust height as needed */
+}
+
+.heading-container h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Error Message */
+.error-message {
+  color: red;
+  font-weight: bold;
+}
+
+/* Property List Grid */
+.property-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Property Card */
+.property-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  background: black;
+  transition: transform 0.2s;
+}
+
+.property-card:hover {
+  transform: scale(1.03);
+}
+
+/* Property Image */
+.property-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Property Info */
+.property-info {
+  padding: 15px;
+  background: #1a1a1a;
+  color: white;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.property-info p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* Map Container */
+.map-container {
+  height: 400px;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Search Bar */
+.search-bar {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+/* List Property Button */
+.list-property-btn {
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.list-property-btn:hover {
+  background-color: #45a049;
+}
+
+/* Status Colors */
+.occupied {
+  color: red;
+  font-weight: bold;
+}
+
+.available {
+  color: green;
+  font-weight: bold;
+}
